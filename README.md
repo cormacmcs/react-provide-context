@@ -11,7 +11,7 @@ Use CreateContext to get a provider and reducer/state hooks
 
 CreateContext requires initialState and a reducer as props.
 
-```  
+```jsx  
 import CreateContext from 'react-provide-context';
 
 type State = { shiny: boolean; dark: boolean };
@@ -49,7 +49,7 @@ The returned context has properties:
 
 CreateContext can also be provided an actions object
 
-``` 
+```jsx 
 import CreateContext from 'react-provide-context';
 
 type State = { pageA: number; pageB: string };
@@ -89,7 +89,7 @@ When actions are provided the returned context has additional properties:
 
 useContext example using usePage hook created above
 
-``` 
+```jsx 
   const [{ pageB }, { setPageB }] = usePage();
 ``` 
 
@@ -100,7 +100,7 @@ useMetaReducer takes CreateContext and an array of MetaReducers and returns a ne
 
 Logging example below
 
-``` 
+```jsx 
 import CreateContext, { useMetaReducers } from 'react-provide-context';
 
 const logger = (reducer) => {
