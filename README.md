@@ -97,7 +97,7 @@ useMetaReducer takes CreateContext and an array of MetaReducers and returns a ne
 Logging example below
 
 ``` 
-import CreateContext, { useMetaReducers } from '@app/react-provide-context';
+import CreateContext, { useMetaReducers } from 'react-provide-context';
 
 const logger = (reducer) => {
   return (state, action) => {
