@@ -1,6 +1,10 @@
 # react-provide-context
 Simple lightweight context based react state management with typescript support
 
+```
+npm i react-provide-context
+``` 
+
 **CreateContext:**
 
 Use CreateContext to get a provider and reducer/state hooks
