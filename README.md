@@ -67,8 +67,8 @@ function pageReducer(state: State, action): State {
 }
 
 const actions = (dispatch) => ({
-  setA: (value: number) => dispatch({ type: 'setPageA', value }),
-  setB: (value: string) => dispatch({ type: 'setPageB', value }),
+  setPageA: (value: number) => dispatch({ type: 'setPageA', value }),
+  setPageB: (value: string) => dispatch({ type: 'setPageB', value }),
 });
 
 const Context = CreateContext(initialState, pageReducer, actions);
@@ -93,6 +93,8 @@ useContext example using usePage hook created above
 
 useMetaReducer can be used to add MetaReducers to all reducer used by CreateContext
 useMetaReducer takes CreateContext and an array of MetaReducers and returns a new CreateContext function
+
+Logging example below
 
 ``` 
 import CreateContext, { useMetaReducers } from '@app/react-provide-context';
